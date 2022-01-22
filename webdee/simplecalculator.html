@@ -1,0 +1,53 @@
+<html>
+<head>
+      <title>Calculator</title>
+	  <link rel="stylesheet" href="css/simplecalculator.css" />
+      <script src="myscript.js"></script>
+</head>
+<body topmargin="20">
+<body bgcolor="gray">
+   <center>
+     <form name="frmsimplecalculator">
+      <table border="7" cellpading="5" cellspacing="0" bgcolor="yellow">
+       <tr>
+        <td>
+          <table border="0" cellpading="0" width="250" height="250">
+            <tr>
+             <td>
+               <input type="button" class="operator_" name="_c" value="C" style="background-color: #009099" onclick="cancel_();">
+           </td>
+            <td colspan="3">
+                 <input type="text" class="display_" name="txtDisplay" value="0" maxlength="14">
+            </td>
+           </tr>
+            <tr>
+			   <td colspan="4"></td>
+			</tr>
+			<tr>
+			  <td><input type="button" class="operator_" name="_plus" value="+" onclick="checkOperator(this);"></td>
+			  <td><input type="button" class="operand_" name="_1" value="1" onclick="displayMe(this);"></td>
+			  <td><input type="button" class="operand_" name="_2" value="2" onclick="displayMe(this);"></td>
+			  <td><input type="button" class="operand_" name="_3" value="3" onclick="displayMe(this);"></td>
+			</tr>
+			  
+			<tr>
+			  <td><input type="button" class="operator_" name="_minus" value="-" onclick="checkOperator(this);"></td>
+			  <td><input type="button" class="operand_" name="_4" value="4" onclick="displayMe(this);"></td>
+			  <td><input type="button" class="operand_" name="_5" value="5" onclick="displayMe(this);"></td>
+			  <td><input type="button" class="operand_" name="_6" value="6" onclick="displayMe(this);"></td>
+			</tr>
+			<tr>
+			  <td><input type="button" class="operator_" name="_multiply" value="*" onclick="checkOperator(this);"></td>
+			  <td><input type="button" class="operand_" name="_7" value="7" onclick="displayMe(this);"></td>
+			  <td><input type="button" class="operand_" name="_8" value="8" onclick="displayMe(this);"></td>
+			  <td><input type="button" class="operand_" name="_9" value="9" onclick="displayMe(this);"></td>
+			</tr>
+			<tr>
+			  <td><input type="button" class="operator_" name="_division" value="/" onclick="checkOperator(this);"></td>
+			  <td><input type="button" class="operand_" name="_decimal" value="." onclick="displayMe(this);"></td>
+			  <td><input type="button" class="operand_" name="_zero" value="0" onclick="displayMe(this);"></td>
+			  <td><input type="button" class="operand_" name="_equals" value="=" onclick="solve();"></td>
+			 </tr>
+	</body>
+			
+</html>			
